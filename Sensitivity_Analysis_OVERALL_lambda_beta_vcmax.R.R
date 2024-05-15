@@ -1769,3 +1769,729 @@ output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime <- output_file_vmax_P1_P2_P9
 #####################################################
 #####################################################
 #####################################################
+#calculate mean square error by substracting each parameter simulated sap 
+# flux density with reference parameter of each trees
+
+#########CALCULATE MSE######
+#########AMBIENT MSE#######
+# Calculate MSE for Tree 11011
+MSE_26.46_11011 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_40.36_11011 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_37.41_11011 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_32.34_11011 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_17.02_11011 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_15.41_11011 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_43.38_11011 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_11.42_11011 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_23.48_11011 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_35.46_11011 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_41.31_11011 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_21.48_11011 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_6.40_11011 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_12.33_11011 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_19.93_11011 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_46.59_11011 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_49.86_11011 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_9.18_11011 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_28.33_11011 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+MSE_30.46_11011 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S11011 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11011)^2)
+
+# Calculate MSE for Tree 11003
+MSE_26.46_11003 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_40.36_11003 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_37.41_11003 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_32.34_11003 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_17.02_11003 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_15.41_11003 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_43.38_11003 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_11.42_11003 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_23.48_11003 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_35.46_11003 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_41.31_11003 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_21.48_11003 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_6.40_11003 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_12.33_11003 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_19.93_11003 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_46.59_11003 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_49.86_11003 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_9.18_11003 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_28.33_11003 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+MSE_30.46_11003 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S11003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11003)^2)
+
+
+# Calculate MSE for Tree 11004
+MSE_26.46_11004 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_40.36_11004 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_37.41_11004 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_32.34_11004 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_17.02_11004 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_15.41_11004 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_43.38_11004 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_11.42_11004 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_23.48_11004 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_35.46_11004 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_41.31_11004 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_21.48_11004 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_6.40_11004 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_12.33_11004 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_19.93_11004 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_46.59_11004 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_49.86_11004 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_9.18_11004 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_28.33_11004 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+MSE_30.46_11004 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S11004 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S11004)^2)
+
+# Calculate MSE for Tree 12007
+MSE_26.46_12007 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_40.36_12007 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_37.41_12007 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_32.34_12007 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_17.02_12007 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_15.41_12007 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_43.38_12007 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_11.42_12007 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_23.48_12007 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_35.46_12007 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_41.31_12007 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_21.48_12007 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_6.40_12007 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_12.33_12007 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_19.93_12007 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_46.59_12007 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_49.86_12007 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_9.18_12007 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_28.33_12007 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+MSE_30.46_12007 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S12007 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S12007)^2)
+
+
+# Calculate MSE for Tree 17030
+MSE_26.46_17030 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_40.36_17030 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_37.41_17030 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_32.34_17030 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_17.02_17030 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_15.41_17030 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_43.38_17030 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_11.42_17030 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_23.48_17030 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_35.46_17030 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_41.31_17030 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_21.48_17030 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_6.40_17030 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_12.33_17030 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_19.93_17030 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_46.59_17030 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_49.86_17030 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_9.18_17030 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_28.33_17030 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+MSE_30.46_17030 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S17030 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S17030)^2)
+
+# Calculate MSE for Tree 13034
+MSE_26.46_13034 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_40.36_13034 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_37.41_13034 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_32.34_13034 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_17.02_13034 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_15.41_13034 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_43.38_13034 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_11.42_13034 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_23.48_13034 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_35.46_13034 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_41.31_13034 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_21.48_13034 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_6.40_13034 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_12.33_13034 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_19.93_13034 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_46.59_13034 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_49.86_13034 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_9.18_13034 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_28.33_13034 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+MSE_30.46_13034 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S13034 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S13034)^2)
+
+# Calculate MSE for Tree 15033
+MSE_26.46_15033 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_40.36_15033 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_37.41_15033 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_32.34_15033 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_17.02_15033 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_15.41_15033 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_43.38_15033 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_11.42_15033 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_23.48_15033 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_35.46_15033 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_41.31_15033 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_21.48_15033 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_6.40_15033 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_12.33_15033 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_19.93_15033 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_46.59_15033 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_49.86_15033 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_9.18_15033 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_28.33_15033 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+MSE_30.46_15033 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S15033 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S15033)^2)
+
+# Calculate MSE for Tree 16015
+MSE_26.46_16015 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_40.36_16015 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_37.41_16015 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_32.34_16015 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_17.02_16015 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_15.41_16015 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_43.38_16015 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_11.42_16015 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_23.48_16015 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_35.46_16015 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_41.31_16015 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_21.48_16015 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_6.40_16015 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_12.33_16015 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_19.93_16015 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_46.59_16015 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_49.86_16015 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_9.18_16015 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_28.33_16015 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+MSE_30.46_16015 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S16015 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S16015)^2)
+
+#######ELEVATED MSE#######
+# Calculate MSE for Tree 25009
+MSE_26.46_25009 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_40.36_25009 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_37.41_25009 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_32.34_25009 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_17.02_25009 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_15.41_25009 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_43.38_25009 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_11.42_25009 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_23.48_25009 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_35.46_25009 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_41.31_25009 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_21.48_25009 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_6.40_25009 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_12.33_25009 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_19.93_25009 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_46.59_25009 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_49.86_25009 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_9.18_25009 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_28.33_25009 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+MSE_30.46_25009 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S25009 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S25009)^2)
+
+
+# Calculate MSE for Tree 26062
+MSE_26.46_26062 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_40.36_26062 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_37.41_26062 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_32.34_26062 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_17.02_26062 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_15.41_26062 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_43.38_26062 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_11.42_26062 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_23.48_26062 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_35.46_26062 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_41.31_26062 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_21.48_26062 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_6.40_26062 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_12.33_26062 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_19.93_26062 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_46.59_26062 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_49.86_26062 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_9.18_26062 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_28.33_26062 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+MSE_30.46_26062 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S26062 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26062)^2)
+
+# Calculate MSE for Tree 26063
+MSE_26.46_26063 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_40.36_26063 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_37.41_26063 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_32.34_26063 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_17.02_26063 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_15.41_26063 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_43.38_26063 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_11.42_26063 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_23.48_26063 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_35.46_26063 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_41.31_26063 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_21.48_26063 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_6.40_26063 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_12.33_26063 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_19.93_26063 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_46.59_26063 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_49.86_26063 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_9.18_26063 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_28.33_26063 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+MSE_30.46_26063 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S26063 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S26063)^2)
+
+# Calculate MSE for Tree 27046
+MSE_26.46_27046 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_40.36_27046 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_37.41_27046 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_32.34_27046 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_17.02_27046 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_15.41_27046 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_43.38_27046 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_11.42_27046 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_23.48_27046 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_35.46_27046 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_41.31_27046 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_21.48_27046 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_6.40_27046 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_12.33_27046 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_19.93_27046 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_46.59_27046 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_49.86_27046 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_9.18_27046 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_28.33_27046 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+MSE_30.46_27046 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S27046 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S27046)^2)
+
+# Calculate MSE for Tree 28044
+MSE_26.46_28044 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_40.36_28044 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_37.41_28044 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_32.34_28044 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_17.02_28044 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_15.41_28044 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_43.38_28044 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_11.42_28044 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_23.48_28044 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_35.46_28044 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_41.31_28044 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_21.48_28044 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_6.40_28044 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_12.33_28044 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_19.93_28044 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_46.59_28044 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_49.86_28044 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_9.18_28044 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_28.33_28044 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+MSE_30.46_28044 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S28044 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S28044)^2)
+
+
+# Calculate MSE for Tree 21019
+MSE_26.46_21019 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_40.36_21019 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_37.41_21019 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_32.34_21019 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_17.02_21019 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_15.41_21019 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_43.38_21019 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_11.42_21019 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_23.48_21019 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_35.46_21019 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_41.31_21019 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_21.48_21019 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_6.40_21019 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_12.33_21019 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_19.93_21019 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_46.59_21019 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_49.86_21019 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_9.18_21019 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_28.33_21019 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+MSE_30.46_21019 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S21019 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S21019)^2)
+
+# Calculate MSE for Tree 22022
+MSE_26.46_22022 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_40.36_22022 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_37.41_22022 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_32.34_22022 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_17.02_22022 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_15.41_22022 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_43.38_22022 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_11.42_22022 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_23.48_22022 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_35.46_22022 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_41.31_22022 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_21.48_22022 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_6.40_22022 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_12.33_22022 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_19.93_22022 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_46.59_22022 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_49.86_22022 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_9.18_22022 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_28.33_22022 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+MSE_30.46_22022 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S22022 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S22022)^2)
+
+
+# Calculate MSE for Tree 23003
+MSE_26.46_23003 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_40.36_23003 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_37.41_23003 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_32.34_23003 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_17.02_23003 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_15.41_23003 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_43.38_23003 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_11.42_23003 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_23.48_23003 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_35.46_23003 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_41.31_23003 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_21.48_23003 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_6.40_23003 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_12.33_23003 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_19.93_23003 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_46.59_23003 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_49.86_23003 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_9.18_23003 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_28.33_23003 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+MSE_30.46_23003 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S23003 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S23003)^2)
+
+# Calculate MSE for Tree 24013
+MSE_26.46_24013 <- mean((output_file_vmax_P1_P2_P9_P10_26.46.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_40.36_24013 <- mean((output_file_vmax_P1_P2_P9_P10_40.36.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_37.41_24013 <- mean((output_file_vmax_P1_P2_P9_P10_37.41.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_32.34_24013 <- mean((output_file_vmax_P1_P2_P9_P10_32.34.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_17.02_24013 <- mean((output_file_vmax_P1_P2_P9_P10_17.02.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_15.41_24013 <- mean((output_file_vmax_P1_P2_P9_P10_15.41.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_43.38_24013 <- mean((output_file_vmax_P1_P2_P9_P10_43.38.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_11.42_24013 <- mean((output_file_vmax_P1_P2_P9_P10_11.42.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_23.48_24013 <- mean((output_file_vmax_P1_P2_P9_P10_23.48.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_35.46_24013 <- mean((output_file_vmax_P1_P2_P9_P10_35.46.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_41.31_24013 <- mean((output_file_vmax_P1_P2_P9_P10_41.31.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_21.48_24013 <- mean((output_file_vmax_P1_P2_P9_P10_21.48.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_6.40_24013 <- mean((output_file_vmax_P1_P2_P9_P10_6.40.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_12.33_24013 <- mean((output_file_vmax_P1_P2_P9_P10_12.33.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_19.93_24013 <- mean((output_file_vmax_P1_P2_P9_P10_19.93.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_46.59_24013 <- mean((output_file_vmax_P1_P2_P9_P10_46.59.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_49.86_24013 <- mean((output_file_vmax_P1_P2_P9_P10_49.86.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_9.18_24013 <- mean((output_file_vmax_P1_P2_P9_P10_9.18.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_28.33_24013 <- mean((output_file_vmax_P1_P2_P9_P10_28.33.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+MSE_30.46_24013 <- mean((output_file_vmax_P1_P2_P9_P10_30.46.sapflux_daytime$S24013 - output_file_vmax_P1_P2_P9_P10_27.40.sapflux_daytime$S24013)^2)
+
+
+# average_MSE_ambient
+average_MSE_all_trees_ambient_Patch1_Patch9 <- c(
+  mean(c(MSE_26.46_11004, MSE_26.46_11011, MSE_26.46_12007, MSE_26.46_11003, MSE_26.46_17030,MSE_26.46_13034,MSE_26.46_15033,MSE_26.46_16015)),
+  mean(c(MSE_40.36_11004, MSE_40.36_11011, MSE_40.36_12007, MSE_40.36_11003, MSE_40.36_17030,MSE_40.36_13034,MSE_40.36_15033,MSE_40.36_16015)),
+  mean(c(MSE_37.41_11004, MSE_37.41_11011, MSE_37.41_12007, MSE_37.41_11003, MSE_37.41_17030,MSE_37.41_13034,MSE_37.41_15033,MSE_37.41_16015)),
+  mean(c(MSE_32.34_11004, MSE_32.34_11011, MSE_32.34_12007, MSE_32.34_11003, MSE_32.34_17030,MSE_32.34_13034,MSE_32.34_15033,MSE_32.34_16015)),
+  mean(c(MSE_17.02_11004, MSE_17.02_11011, MSE_17.02_12007, MSE_17.02_11003, MSE_17.02_12007,MSE_17.02_13034,MSE_17.02_15033,MSE_17.02_16015)),
+  mean(c(MSE_15.41_11004, MSE_15.41_11011, MSE_15.41_12007, MSE_15.41_11003, MSE_15.41_17030,MSE_15.41_13034,MSE_15.41_15033,MSE_15.41_16015)),
+  mean(c(MSE_43.38_11004, MSE_43.38_11011, MSE_43.38_12007, MSE_43.38_11003, MSE_43.38_17030,MSE_43.38_13034,MSE_43.38_15033,MSE_43.38_16015)),
+  mean(c(MSE_11.42_11004, MSE_11.42_11011, MSE_11.42_12007, MSE_11.42_11003,MSE_11.42_17030,MSE_11.42_13034,MSE_11.42_15033,MSE_11.42_16015)),
+  mean(c(MSE_23.48_11004, MSE_23.48_11011, MSE_23.48_12007, MSE_23.48_11003, MSE_23.48_17030,MSE_23.48_13034,MSE_23.48_15033,MSE_23.48_16015)),
+  mean(c(MSE_35.46_11004, MSE_35.46_11011, MSE_35.46_12007, MSE_35.46_11003, MSE_35.46_17030,MSE_35.46_13034,MSE_35.46_15033,MSE_35.46_16015)),
+  mean(c(MSE_41.31_11004, MSE_41.31_11011, MSE_41.31_12007, MSE_41.31_11003, MSE_41.31_17030,MSE_41.31_13034,MSE_41.31_15033,MSE_41.31_16015)),
+  mean(c(MSE_21.48_11004, MSE_21.48_11011, MSE_21.48_12007, MSE_21.48_11003, MSE_21.48_17030,MSE_21.48_13034,MSE_21.48_15033,MSE_21.48_16015)),
+  mean(c(MSE_6.40_11004, MSE_6.40_11011, MSE_6.40_12007, MSE_6.40_11003, MSE_6.40_17030,MSE_6.40_13034,MSE_6.40_15033,MSE_6.40_16015)),
+  mean(c(MSE_12.33_11004, MSE_12.33_11011, MSE_12.33_12007, MSE_12.33_11003, MSE_12.33_17030,MSE_12.33_13034,MSE_12.33_15033,MSE_12.33_16015)),
+  mean(c(MSE_19.93_11004, MSE_19.93_11011, MSE_19.93_12007, MSE_19.93_11003, MSE_19.93_17030,MSE_19.93_13034,MSE_19.93_15033,MSE_19.93_16015)),
+  mean(c(MSE_46.59_11004, MSE_46.59_11011, MSE_46.59_12007, MSE_46.59_11003, MSE_46.59_17030,MSE_46.59_13034,MSE_46.59_15033,MSE_46.59_16015)),
+  mean(c(MSE_49.86_11004, MSE_49.86_11011, MSE_49.86_12007, MSE_49.86_11003, MSE_49.86_17030,MSE_49.86_13034,MSE_49.86_15033,MSE_49.86_16015)),
+  mean(c(MSE_9.18_11004, MSE_9.18_11011, MSE_9.18_12007, MSE_9.18_11003, MSE_9.18_17030,MSE_9.18_13034,MSE_9.18_15033,MSE_9.18_16015)),
+  mean(c(MSE_28.33_11004, MSE_28.33_11011, MSE_28.33_12007, MSE_28.33_11003, MSE_28.33_17030,MSE_28.33_13034,MSE_28.33_15033,MSE_28.33_16015)),
+  mean(c(MSE_30.46_11004, MSE_30.46_11011, MSE_30.46_12007, MSE_30.46_11003, MSE_30.46_17030,MSE_30.46_13034,MSE_30.46_15033,MSE_30.46_16015))
+)
+
+###########################################==========================
+
+# Calculate criterion
+criterion <- median(average_MSE_all_trees_ambient_Patch1_Patch9, na.rm = TRUE)
+cat("Criterion:", criterion, "\n")
+
+# Classify lambda values as acceptable or unacceptable based on the criterion
+acceptable <- # Calculate criterion
+criterion <- median(average_MSE_all_trees_ambient_Patch1_Patch9, na.rm = TRUE)
+cat("Criterion:", criterion, "\n")
+
+# Classify lambda values as acceptable or unacceptable based on the criterion
+acceptable <- average_MSE_all_trees_ambient_Patch1_Patch9 < criterion
+unacceptable <- average_MSE_all_trees_ambient_Patch1_Patch9 >= criterion
+##########################################
+######For LAMBDA#####==================================
+parameter_ranges <- c(3.56, 9.38, 6.06, 10.27, 14.16, 11.38, 3.88, 7.27, 11.60,
+                      5.30, 7.95, 2.05, 12.31, 9.64, 8.46, 1.22, 2.65, 14.40, 13.36,
+                      4.63)
+normalized_parameters <- (parameter_ranges - min(parameter_ranges)) / (max(parameter_ranges) - min(parameter_ranges))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable <- normalized_parameters[acceptable]
+normalized_parameters_unacceptable <- normalized_parameters[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result <- wilcox.test(normalized_parameters_acceptable, normalized_parameters_unacceptable)
+
+# Print the test result
+print(wilcox_result)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index <- median(normalized_parameters_acceptable) - median(normalized_parameters_unacceptable)
+cat("Sensitivity Index:", sensitivity_index, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result$p.value < 0.05) {
+  cat("Parameter sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter sensitivity is not statistically significant.\n")
+}
+
+
+######=======================================
+######## For beta#####
+
+parameter_ranges_beta <- c(-1.13070273, -0.88776894, -0.38203787, 0.09046134,
+                      -0.57870537, -1.52737281, -0.12360631, -1.25746141,
+                      -0.25078135, -1.83032428, 0.34345438, -0.65088637, 
+                      -0.78676762, -1.44052187, -0.18816818, -1.96149344,
+                      0.46187653, -1.64715084, 0.17933971, -1.06065842)
+
+
+
+
+
+normalized_parameters_beta <- (parameter_ranges_beta - min(parameter_ranges_beta))/ (max(parameter_ranges_beta) - min(parameter_ranges_beta))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable_beta <- normalized_parameters_beta[acceptable]
+normalized_parameters_unacceptable_beta <- normalized_parameters_beta[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result_beta <- wilcox.test(normalized_parameters_acceptable_beta, 
+                             normalized_parameters_unacceptable_beta)
+
+# Print the test result
+print(wilcox_result_beta)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index_beta <- median(normalized_parameters_acceptable_beta) - median(normalized_parameters_unacceptable_beta)
+cat("Sensitivity Index_beta:", sensitivity_index_beta, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result_beta$p.value < 0.05) {
+  cat("Parameter beta sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter beta sensitivity is not statistically significant.\n")
+}
+ < criterion
+unacceptable <- average_MSE_all_trees >= criterion
+##########################################
+######For LAMBDA#####==================================
+parameter_ranges <- c(3.56, 9.38, 6.06, 10.27, 14.16, 11.38, 3.88, 7.27, 11.60,
+                      5.30, 7.95, 2.05, 12.31, 9.64, 8.46, 1.22, 2.65, 14.40, 13.36,
+                      4.63)
+normalized_parameters <- (parameter_ranges - min(parameter_ranges)) / (max(parameter_ranges) - min(parameter_ranges))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable <- normalized_parameters[acceptable]
+normalized_parameters_unacceptable <- normalized_parameters[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result <- wilcox.test(normalized_parameters_acceptable, normalized_parameters_unacceptable)
+
+# Print the test result
+print(wilcox_result)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index <- median(normalized_parameters_acceptable) - median(normalized_parameters_unacceptable)
+cat("Sensitivity Index:", sensitivity_index, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result$p.value < 0.05) {
+  cat("Parameter sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter sensitivity is not statistically significant.\n")
+}
+
+
+######=======================================
+######## For vcmax#####
+
+parameter_ranges_vcmax <- c(26.46, 40.36, 37.41, 32.34, 17.02, 15.41,
+                            43.38, 11.42, 23.48, 35.46, 41.31, 21.48, 
+                            6.40, 12.33, 19.93, 46.59, 49.86, 9.18, 
+                            28.33, 30.46)
+
+
+
+
+
+normalized_parameters_vcmax <- (parameter_ranges_vcmax - min(parameter_ranges_vcmax))/ (max(parameter_ranges_vcmax) - min(parameter_ranges_vcmax))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable_vcmax <- normalized_parameters_vcmax[acceptable]
+normalized_parameters_unacceptable_vcmax <- normalized_parameters_vcmax[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result_vcmax <- wilcox.test(normalized_parameters_acceptable_vcmax, 
+                                  normalized_parameters_unacceptable_vcmax)
+
+# Print the test result
+print(wilcox_result_vcmax)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index_vcmax <- median(normalized_parameters_acceptable_vcmax) - median(normalized_parameters_unacceptable_vcmax)
+cat("Sensitivity Index_vcmax:", sensitivity_index_vcmax, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result_vcmax$p.value < 0.05) {
+  cat("Parameter vcmax sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter vcmax sensitivity is not statistically significant.\n")
+}
+
+######ELEVATED MSE########
+# average_MSE_ambient
+average_MSE_all_trees_elevated_Patch1_Patch9 <- c(
+  mean(c(MSE_26.46_25009, MSE_26.46_26062, MSE_26.46_26063, MSE_26.46_27046, MSE_26.46_28044,MSE_26.46_21019,MSE_26.46_22022,MSE_26.46_23003,MSE_26.46_24013)),
+  mean(c(MSE_40.36_25009, MSE_40.36_26062, MSE_40.36_26063, MSE_40.36_27046, MSE_40.36_28044,MSE_40.36_21019,MSE_40.36_22022,MSE_40.36_23003,MSE_40.36_24013)),
+  mean(c(MSE_37.41_25009, MSE_37.41_26062, MSE_37.41_26063, MSE_37.41_27046, MSE_37.41_28044,MSE_37.41_21019,MSE_37.41_22022,MSE_37.41_23003,MSE_37.41_24013)),
+  mean(c(MSE_32.34_25009, MSE_32.34_26062, MSE_32.34_26063, MSE_32.34_27046, MSE_32.34_28044,MSE_32.34_21019,MSE_32.34_22022,MSE_32.34_23003,MSE_32.34_24013)),
+  mean(c(MSE_17.02_25009, MSE_17.02_26062, MSE_17.02_26063, MSE_17.02_27046, MSE_17.02_26063,MSE_17.02_21019,MSE_17.02_22022,MSE_17.02_23003,MSE_17.02_24013)),
+  mean(c(MSE_15.41_25009, MSE_15.41_26062, MSE_15.41_26063, MSE_15.41_27046, MSE_15.41_28044,MSE_15.41_21019,MSE_15.41_22022,MSE_15.41_23003,MSE_15.41_24013)),
+  mean(c(MSE_43.38_25009, MSE_43.38_26062, MSE_43.38_26063, MSE_43.38_27046, MSE_43.38_28044,MSE_43.38_21019,MSE_43.38_22022,MSE_43.38_23003,MSE_43.38_24013)),
+  mean(c(MSE_11.42_25009, MSE_11.42_26062, MSE_11.42_26063, MSE_11.42_27046,MSE_11.42_28044,MSE_11.42_21019,MSE_11.42_22022,MSE_11.42_23003,MSE_11.42_24013)),
+  mean(c(MSE_23.48_25009, MSE_23.48_26062, MSE_23.48_26063, MSE_23.48_27046, MSE_23.48_28044,MSE_23.48_21019,MSE_23.48_22022,MSE_23.48_23003,MSE_23.48_24013)),
+  mean(c(MSE_35.46_25009, MSE_35.46_26062, MSE_35.46_26063, MSE_35.46_27046, MSE_35.46_28044,MSE_35.46_21019,MSE_35.46_22022,MSE_35.46_23003,MSE_35.46_24013)),
+  mean(c(MSE_41.31_25009, MSE_41.31_26062, MSE_41.31_26063, MSE_41.31_27046, MSE_41.31_28044,MSE_41.31_21019,MSE_41.31_22022,MSE_41.31_23003,MSE_41.31_24013)),
+  mean(c(MSE_21.48_25009, MSE_21.48_26062, MSE_21.48_26063, MSE_21.48_27046, MSE_21.48_28044,MSE_21.48_21019,MSE_21.48_22022,MSE_21.48_23003,MSE_21.48_24013)),
+  mean(c(MSE_6.40_25009, MSE_6.40_26062, MSE_6.40_26063, MSE_6.40_27046, MSE_6.40_28044,MSE_6.40_21019,MSE_6.40_22022,MSE_6.40_23003,MSE_6.40_24013)),
+  mean(c(MSE_12.33_25009, MSE_12.33_26062, MSE_12.33_26063, MSE_12.33_27046, MSE_12.33_28044,MSE_12.33_21019,MSE_12.33_22022,MSE_12.33_23003,MSE_12.33_24013)),
+  mean(c(MSE_19.93_25009, MSE_19.93_26062, MSE_19.93_26063, MSE_19.93_27046, MSE_19.93_28044,MSE_19.93_21019,MSE_19.93_22022,MSE_19.93_23003,MSE_19.93_24013)),
+  mean(c(MSE_46.59_25009, MSE_46.59_26062, MSE_46.59_26063, MSE_46.59_27046, MSE_46.59_28044,MSE_46.59_21019,MSE_46.59_22022,MSE_46.59_23003,MSE_46.59_24013)),
+  mean(c(MSE_49.86_25009, MSE_49.86_26062, MSE_49.86_26063, MSE_49.86_27046, MSE_49.86_28044,MSE_49.86_21019,MSE_49.86_22022,MSE_49.86_23003,MSE_49.86_24013)),
+  mean(c(MSE_9.18_25009, MSE_9.18_26062, MSE_9.18_26063, MSE_9.18_27046, MSE_9.18_28044,MSE_9.18_21019,MSE_9.18_22022,MSE_9.18_23003,MSE_9.18_24013)),
+  mean(c(MSE_28.33_25009, MSE_28.33_26062, MSE_28.33_26063, MSE_28.33_27046, MSE_28.33_28044,MSE_28.33_21019,MSE_28.33_22022,MSE_28.33_23003,MSE_28.33_24013)),
+  mean(c(MSE_30.46_25009, MSE_30.46_26062, MSE_30.46_26063, MSE_30.46_27046, MSE_30.46_28044,MSE_30.46_21019,MSE_30.46_22022,MSE_30.46_23003,MSE_30.46_24013))
+)
+
+###########################################==========================
+
+# Calculate criterion
+criterion <- median(average_MSE_all_trees_elevated_Patch1_Patch9, na.rm = TRUE)
+cat("Criterion:", criterion, "\n")
+
+# Classify lambda values as acceptable or unacceptable based on the criterion
+acceptable <- # Calculate criterion
+  criterion <- median(average_MSE_all_trees_elevated_Patch1_Patch9, na.rm = TRUE)
+cat("Criterion:", criterion, "\n")
+
+# Classify lambda values as acceptable or unacceptable based on the criterion
+acceptable <- average_MSE_all_trees_elevated_Patch1_Patch9 < criterion
+unacceptable <- average_MSE_all_trees_elevated_Patch1_Patch9 >= criterion
+##########################################
+######For LAMBDA#####==================================
+parameter_ranges <- c(3.56, 9.38, 6.06, 10.27, 14.16, 11.38, 3.88, 7.27, 11.60,
+                      5.30, 7.95, 2.05, 12.31, 9.64, 8.46, 1.22, 2.65, 14.40, 13.36,
+                      4.63)
+normalized_parameters <- (parameter_ranges - min(parameter_ranges)) / (max(parameter_ranges) - min(parameter_ranges))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable <- normalized_parameters[acceptable]
+normalized_parameters_unacceptable <- normalized_parameters[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result <- wilcox.test(normalized_parameters_acceptable, normalized_parameters_unacceptable)
+
+# Print the test result
+print(wilcox_result)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index <- median(normalized_parameters_acceptable) - median(normalized_parameters_unacceptable)
+cat("Sensitivity Index:", sensitivity_index, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result$p.value < 0.05) {
+  cat("Parameter sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter sensitivity is not statistically significant.\n")
+}
+
+
+######=======================================
+######## For beta#####
+
+parameter_ranges_beta <- c(-1.13070273, -0.88776894, -0.38203787, 0.09046134,
+                           -0.57870537, -1.52737281, -0.12360631, -1.25746141,
+                           -0.25078135, -1.83032428, 0.34345438, -0.65088637, 
+                           -0.78676762, -1.44052187, -0.18816818, -1.96149344,
+                           0.46187653, -1.64715084, 0.17933971, -1.06065842)
+
+
+
+
+
+normalized_parameters_beta <- (parameter_ranges_beta - min(parameter_ranges_beta))/ (max(parameter_ranges_beta) - min(parameter_ranges_beta))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable_beta <- normalized_parameters_beta[acceptable]
+normalized_parameters_unacceptable_beta <- normalized_parameters_beta[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result_beta <- wilcox.test(normalized_parameters_acceptable_beta, 
+                                  normalized_parameters_unacceptable_beta)
+
+# Print the test result
+print(wilcox_result_beta)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index_beta <- median(normalized_parameters_acceptable_beta) - median(normalized_parameters_unacceptable_beta)
+cat("Sensitivity Index_beta:", sensitivity_index_beta, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result_beta$p.value < 0.05) {
+  cat("Parameter beta sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter beta sensitivity is not statistically significant.\n")
+}
+unacceptable <- average_MSE_all_trees >= criterion
+##########################################
+######For LAMBDA#####==================================
+parameter_ranges <- c(3.56, 9.38, 6.06, 10.27, 14.16, 11.38, 3.88, 7.27, 11.60,
+                      5.30, 7.95, 2.05, 12.31, 9.64, 8.46, 1.22, 2.65, 14.40, 13.36,
+                      4.63)
+normalized_parameters <- (parameter_ranges - min(parameter_ranges)) / (max(parameter_ranges) - min(parameter_ranges))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable <- normalized_parameters[acceptable]
+normalized_parameters_unacceptable <- normalized_parameters[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result <- wilcox.test(normalized_parameters_acceptable, normalized_parameters_unacceptable)
+
+# Print the test result
+print(wilcox_result)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index <- median(normalized_parameters_acceptable) - median(normalized_parameters_unacceptable)
+cat("Sensitivity Index:", sensitivity_index, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result$p.value < 0.05) {
+  cat("Parameter sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter sensitivity is not statistically significant.\n")
+}
+
+
+######=======================================
+######## For vcmax#####
+
+parameter_ranges_vcmax <- c(26.46, 40.36, 37.41, 32.34, 17.02, 15.41,
+                            43.38, 11.42, 23.48, 35.46, 41.31, 21.48, 
+                            6.40, 12.33, 19.93, 46.59, 49.86, 9.18, 
+                            28.33, 30.46)
+
+
+
+
+
+normalized_parameters_vcmax <- (parameter_ranges_vcmax - min(parameter_ranges_vcmax))/ (max(parameter_ranges_vcmax) - min(parameter_ranges_vcmax))
+
+
+# Separate normalized parameters into acceptable and unacceptable subsets
+normalized_parameters_acceptable_vcmax <- normalized_parameters_vcmax[acceptable]
+normalized_parameters_unacceptable_vcmax <- normalized_parameters_vcmax[!acceptable]
+# Conduct Wilcoxon test
+wilcox_result_vcmax <- wilcox.test(normalized_parameters_acceptable_vcmax, 
+                                   normalized_parameters_unacceptable_vcmax)
+
+# Print the test result
+print(wilcox_result_vcmax)
+
+# Extract the sensitivity index (Wilcoxon estimator for the difference between acceptable and unacceptable parameter samples)
+sensitivity_index_vcmax <- median(normalized_parameters_acceptable_vcmax) - median(normalized_parameters_unacceptable_vcmax)
+cat("Sensitivity Index_vcmax:", sensitivity_index_vcmax, "\n")
+
+# Evaluate if the parameter sensitivity is statistically significant based on the p-value
+if (wilcox_result_vcmax$p.value < 0.05) {
+  cat("Parameter vcmax sensitivity is statistically significant.\n")
+} else {
+  cat("Parameter vcmax sensitivity is not statistically significant.\n")
+}
+
